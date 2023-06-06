@@ -38,7 +38,10 @@ body {
     /* overflow: hidden; */
     object-fit: cover;
     height: 160%;
-    /* position: relative; */
+}
+
+.column_img {
+    position: relative;
 }
 
 .heading_ellie {
@@ -78,22 +81,18 @@ body {
     padding: 16px 22px;
     cursor: pointer;
     transition: all 150ms linear;
-    /* position: absolute; */
+    position: absolute;
     /* top: 100px; */
     /* margin-left: 25px; */
+    text-decoration: none;
+    margin-left: 30px;
+    bottom: -100px;
 }
 
 .whitebutton:hover {
     background-color: orange;
     border-color: orange;
     color: white;
-}
-
-a {
-    text-decoration: none;
-    position: absolute;
-    bottom: -80px;
-    margin-left: 25px;
 }
 
 .learnmorebutton {
@@ -109,9 +108,12 @@ a {
     padding: 16px 22px;
     cursor: pointer;
     transition: all 150ms linear;
-    /* position: absolute; */
+    position: absolute;
     /* top: 100px; */
     /* margin-left: 25px; */
+    text-decoration: none;
+    margin-left: 30px;
+    bottom: -100px;
 }
 
 .learnmorebutton:hover {
@@ -157,6 +159,7 @@ a {
     transition: all 150ms linear;
     bottom: -800px;
     margin-left: 3px;
+    text-decoration: none;
 }
 
 .readbutton {
@@ -175,6 +178,7 @@ a {
     transition: all 150ms linear;
     bottom: -1400px;
     margin-left: 3px;
+    text-decoration: none;
 }
 
 .shopbutton:hover{
@@ -185,10 +189,6 @@ a {
 .readbutton:hover{
     background-color: orange;
     border-color: orange;
-}
-
-a {
-    text-decoration: none;
 }
 
 .manwithbottle_heading {
@@ -226,13 +226,6 @@ a {
     margin: 0 0 50px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
 .shophuelbutton:hover {
     background-color: orange;
     border-color: orange;
@@ -251,6 +244,9 @@ body {
     padding: 20px 33px;
     cursor: pointer;
     transition: all 150ms linear;
+    /* position: absolute; */
+    text-decoration: none;
+    margin-left: 0px;
 }
 
 .img_column > img {
@@ -267,6 +263,8 @@ body {
     height: 100%;
     margin: 0;
     flex-direction: column; */
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .column3_ellie {
@@ -280,12 +278,7 @@ body {
     padding-top: 0;
     font-size: 2.75rem;
     color: black;
-    margin: 0 0 24px;
-}
-
-h1 {
     display: block;
-    font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -301,14 +294,6 @@ h1 {
     max-width: none;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 .column3_ellie {
     display: block;
     flex-basis: 0;
@@ -320,27 +305,20 @@ p {
 .text_column {
     margin-left: 20px;
     max-width: 500px;
-    position: relative;
-}
-
-body {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
 }
 
 .HuelBenefits {
     background-color: #0b0b0b;
     color: #fff;
     padding: 75px 0;
+    flex-wrap: wrap;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-section {
-    display: block;
-}
-
-.symbol {
+.symbol_ellie {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -348,4 +326,16 @@ section {
 
 .black-container {
     width: 350px;
+}
+
+@media (max-width: 1020px) {
+    .big_column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column_parent {
+        flex-direction: column;
+        align-items: center;
+    }
 }
