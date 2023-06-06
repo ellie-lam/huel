@@ -25,7 +25,6 @@ body {
 }
 
 .column_ellie {
-    flex: 50%;
     padding: 10px;
     height: auto;
 }
@@ -35,13 +34,13 @@ body {
     width: 100%;
     top: 0;
     display: block;
-    /* overflow: hidden; */
     object-fit: cover;
-    height: 160%;
+    height: 100%;
 }
 
 .column_img {
     position: relative;
+    height: 450px;
 }
 
 .heading_ellie {
@@ -53,7 +52,6 @@ body {
 .breakfastimg_text {
     position: absolute;
     top: 220px;
-    /* margin: -20px 0 30px; */
     margin-bottom: 30px;    
     margin-left: 25px;
     padding: 2px 6px;
@@ -62,7 +60,6 @@ body {
 .exercise_text {
     position: absolute;
     top: 220px;
-    /* margin: -20px 0 30px; */
     margin-bottom: 30px;    
     margin-left: 25px;
     padding: 2px 6px;
@@ -82,11 +79,9 @@ body {
     cursor: pointer;
     transition: all 150ms linear;
     position: absolute;
-    /* top: 100px; */
-    /* margin-left: 25px; */
     text-decoration: none;
     margin-left: 30px;
-    bottom: -100px;
+    bottom: 100px;
 }
 
 .whitebutton:hover {
@@ -109,11 +104,9 @@ body {
     cursor: pointer;
     transition: all 150ms linear;
     position: absolute;
-    /* top: 100px; */
-    /* margin-left: 25px; */
     text-decoration: none;
     margin-left: 30px;
-    bottom: -100px;
+    bottom: 100px;
 }
 
 .learnmorebutton:hover {
@@ -203,7 +196,6 @@ body {
 
 .ladywithbottle_parent {
     margin-right: 20px;
-    margin-top: 150px;
     display: flex;
 }
 
@@ -244,7 +236,6 @@ body {
     padding: 20px 33px;
     cursor: pointer;
     transition: all 150ms linear;
-    /* position: absolute; */
     text-decoration: none;
     margin-left: 0px;
 }
@@ -253,16 +244,10 @@ body {
     height: auto;
     max-width: 100%;
     border-style: none;
-    /* overflow-clip-margin: content-box;
-    overflow: clip; */
 }
 
 .big_column {
     display: flex;
-    /* position: relative;
-    height: 100%;
-    margin: 0;
-    flex-direction: column; */
     font-weight: 400;
     line-height: 1.5;
 }
